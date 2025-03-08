@@ -487,6 +487,7 @@ impl TextReplace {
             .replace("~", "-")
             .replace("～", "ー")
             .replace("っー", "っ");
+            .replace("ｯー", "っ");            
 
         if self.text.starts_with("ー") {
             if let Some(s) = self.text.strip_prefix("ー") {
